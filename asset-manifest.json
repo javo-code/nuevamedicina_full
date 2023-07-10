@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/nuevamedicina_full/static/css/main.fa63cdaf.css",
+    "main.css": "/nuevamedicina_full/static/css/main.f4374196.css",
     "main.js": "/nuevamedicina_full/static/js/main.d41d606b.js",
     "static/media/modalNutricion.jpg": "/nuevamedicina_full/static/media/modalNutricion.ab719f0fba57705d76ea.jpg",
     "static/media/logo.png": "/nuevamedicina_full/static/media/logo.09b9f799ce1601312ec9.png",
     "index.html": "/nuevamedicina_full/index.html",
-    "main.fa63cdaf.css.map": "/nuevamedicina_full/static/css/main.fa63cdaf.css.map",
+    "main.f4374196.css.map": "/nuevamedicina_full/static/css/main.f4374196.css.map",
     "main.d41d606b.js.map": "/nuevamedicina_full/static/js/main.d41d606b.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa63cdaf.css",
+    "static/css/main.f4374196.css",
     "static/js/main.d41d606b.js"
   ]
 }

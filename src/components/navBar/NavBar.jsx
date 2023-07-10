@@ -8,13 +8,13 @@ import Login from '../login/Login';
 const NavBar = () => {
   return (
     <nav className='NavBar'>
-      <Link to='/'>
+
+      <NavLink to={`/`} >      <Link to='/'>
         <img
           className='logo'
           src={logo}
           alt='logo nueva medicina' />
-      </Link>
-      <NavLink to={`/`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Inicio</NavLink>
+      </Link></NavLink>
       <div className="CategoryMenu">
         <CategoryMenu />
       </div>

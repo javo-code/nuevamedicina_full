@@ -8,9 +8,9 @@ rgb(255, 132, 0);
 #09ba09;
 */
 
-nav{    
+.NavBar{    
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 10px;
   background: #fff;
@@ -26,6 +26,18 @@ nav{
 .logo:hover {
   transform: scale(1.1);
   transition: 0.8s;
+}
+
+@media screen and (max-width: 768px) {
+  .CategoryMenu {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .CategoryMenu a {
+    flex-basis: auto;
+  }
 }
 
 .CategoryMenu{

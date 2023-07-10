@@ -1,5 +1,6 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { CartProvider } from './components/context/CartContext'; 
 import ItemDetailContainer from './components/itemDetailContainer/ItemDetailContainer';
 import ItemListContainer from './components/itemListContainer/ItemListContainer';
 import NavBar from './components/navBar/NavBar';
@@ -8,7 +9,6 @@ import Cart from './components/cart/Cart';
 import Checkout from './components/checkout/Checkout';
 import CartModal from './components/cartModal/CartModal';
 import CheckoutForm from './components/checkoutForm/CheckoutForm';
-import { CartProvider } from './components/context/CartContext'; 
 import CategoryItemListContainer from './components/categoryItemListContainer/categoryItemListContainer'
 import Login from './components/login/Login';
 //import Acount from './components/acount/Acount'

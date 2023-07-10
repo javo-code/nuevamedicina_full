@@ -3,6 +3,7 @@ import './navBar.css';
 import CartWidget from '../cartWidget/CartWidget';
 import CategoryMenu from '../categoryMenu/CategoryMenu';
 import { NavLink, Link } from 'react-router-dom';
+import Login from '../login/Login';
 
 const NavBar = () => {
   return (
@@ -19,8 +20,7 @@ const NavBar = () => {
       </div>
       <CartWidget />
       <div className="btn-login">
-        <button type="submit"><Link to="/login">
-        Iniciar sesión</Link></button>
+        <Login />
       </div>
 </nav>
   )

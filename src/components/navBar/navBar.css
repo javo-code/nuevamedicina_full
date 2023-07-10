@@ -42,6 +42,18 @@ nav{
       text-decoration: none;
       font-family: roboto, sans-serif;
       color: #09ba09;
+    }
+
+@media screen and (max-width: 768px) {
+  .CategoryMenu {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .CategoryMenu a {
+    flex-basis: auto;
+  }
 }
 
 .CategoryMenu a:hover {

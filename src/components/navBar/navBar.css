@@ -44,7 +44,7 @@ nav{
       color: #09ba09;
     }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 420px) {
   .CategoryMenu {
     flex-wrap: wrap;
     gap: 20px;

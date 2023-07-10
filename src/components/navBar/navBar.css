@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+rgb(255, 132, 0);
+#09ba09;
+*/
+
+nav{    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 2px 3px 3px rgb(196, 196, 196);
+}
+
+.logo{
+  height: auto;
+  width: 10em;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  transition: 0.8s;
+}
+
+.CategoryMenu{
+    display: flex;
+    gap: 70px;
+}
+
+.CategoryMenu a{
+    display: flex;
+      flex-grow: 1;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      font-family: roboto, sans-serif;
+      color: #09ba09;
+}
+
+.CategoryMenu a:hover {
+  transform: scale(1.3);
+  color: rgb(255, 132, 0);
+  transition: 0.5s;
+}
+
+.Option {
+  display: flex;
+  margin: 0 10px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: roboto, sans-serif;
+  color: #09ba09;
+}
+
+.Option:hover {
+  transform: scale(1.3);
+  color: rgb(255, 132, 0);
+  transition: 0.5s;
+}
+
+.ActiveOption {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: roboto, sans-serif;
+  color: rgb(255, 132, 0);
+}
+
+.CartWidget {
+  margin-left: 10px;
+}
+
+.btn-login {
+  margin-left: 10px;
+}
+
+.btn-login button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+}

@@ -10,7 +10,7 @@ import CartModal from './components/cartModal/CartModal';
 import CheckoutForm from './components/checkoutForm/CheckoutForm';
 import { CartProvider } from './components/context/CartContext'; 
 import CategoryItemListContainer from './components/categoryItemListContainer/categoryItemListContainer'
-//import Login from './components/login/Login';
+import Login from './components/login/Login';
 //import Acount from './components/acount/Acount'
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
           <Route path='/' element={<ItemListContainer greeting={'BIENVENID@S!'}/>} />
             <Route path='/category/:categoryId' element={<CategoryItemListContainer />} />
             <Route path='/item/:itemId' element={<ItemDetailContainer />} />
-            {/* <Route path='/login' element={<Login />} /> */}
+            <Route path='/login' element={<Login />} />
             {/* <Route path='/acount' element={<Acount />} /> */}
             <Route path='/cart' element={<Cart />} />
             <Route path='/cartModal' element={<CartModal />} />

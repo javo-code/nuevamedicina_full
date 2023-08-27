@@ -15,13 +15,13 @@ const CategoryMenu = () => {
       <select value={selectedCategory} onChange={handleCategoryChange}>
         <option value="">CATEGORIAS</option>
         <option value="nutrition">Nutrición Enteral</option>
-        <option value="deponsables">Artículos Descartables</option>
+        <option value="deponsables">Artículos Descartables</option> 
         <option value="bombs">Bombas de Infusión</option>
         <option value="profesionalServ">Servicios Profesionales</option>
 
       </select>
       {selectedCategory && (
-       <NavLink to={`/category/${selectedCategory}`} activeclassname="selected">
+       <NavLink to={`/category/${selectedCategory}`} activeClassName="selected">
   <button className='btn-go'>Ir</button>
 </NavLink>
       )}

@@ -1,27 +1,31 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './components/context/CartContext'; 
-import ItemDetailContainer from './components/itemDetailContainer/ItemDetailContainer';
-import ItemListContainer from './components/itemListContainer/ItemListContainer';
 import NavBar from './components/navBar/NavBar';
 import Footer from './components/footer/Footer';
 import Cart from './components/cart/Cart';
+import ItemListContainer from "./components/itemListContainer/ItemListContainer";
+import ItemDetailContainer from './components/itemDetailContainer/ItemDetailContainer';
+import CategoryListContainer from './components/categoryListContainer/CategoryListContainer';
 import Checkout from './components/checkout/Checkout';
 import CartModal from './components/cartModal/CartModal';
 import CheckoutForm from './components/checkoutForm/CheckoutForm';
-import CategoryItemListContainer from './components/categoryItemListContainer/categoryItemListContainer'
 import Login from './components/login/Login';
+import TestConsulta from './components/testConsulta/TestConsulta';
+
 //import Acount from './components/acount/Acount'
 
 function App() {
   return (
     <div className='app'>
       <BrowserRouter>
-        <CartProvider>
         <NavBar />  
-        <Routes>
-          <Route path='/' element={<ItemListContainer greeting={'BIENVENID@S!'}/>} />
-            <Route path='/category/:categoryId' element={<CategoryItemListContainer />} />
+        <CartProvider>
+          <Routes>
+            <Route path='/' element={<CategoryListContainer />} />
+            <Route path='/all' element={<ItemListContainer/>} greeting={'BIENVENID@S!'}/>
+            <Route path='/test' element={<TestConsulta />} />
+        {/*<Route path='/category/:categoryId' element={<CategoryListContainer />} /> */}
             <Route path='/item/:itemId' element={<ItemDetailContainer />} />
             <Route path='/login' element={<Login />} />
             {/* <Route path='/acount' element={<Acount />} /> */}
@@ -29,11 +33,10 @@ function App() {
             <Route path='/cartModal' element={<CartModal />} />
             <Route path='/checkoutform' element={<CheckoutForm />} />
             <Route path='/checkout' element={<Checkout />} />
-            <Route path='*' element={<h1>404 NOT FOUND</h1>} />
           </Routes>
-      </CartProvider>
+        </CartProvider>
+        <Footer /> 
       </BrowserRouter>
-      <Footer /> 
     </div>
   );
 }

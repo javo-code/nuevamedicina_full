@@ -1,11 +1,11 @@
-import "./itemListContainer.css";
+import "./categoryListContainer.css";
 import { useEffect, useState } from "react";
-import ItemList from "../itemList/ItemList";
-import { useParams } from "react-router-dom";
+import CategoryList from "../categoryList/CategoryList";
+import { Link, useParams } from "react-router-dom";
 import {  getDocs,  collection,  query,  where} from "firebase/firestore";
 import { db } from "../services/firebase/firebaseConfig";
 
-const ItemListContainer = ({ }) => {
+const CategoryListContainer = ({ greeting }) => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -15,8 +15,8 @@ const ItemListContainer = ({ }) => {
   setLoading(true);
 
   const collectionRef = categoryId
-    ? query(collection(db, 'products'), where('category', '==', categoryId))
-    : collection(db, 'products')
+    ? query(collection(db, 'categories'), where('category', '==', categoryId))
+    : collection(db, 'categories')
 
   setTimeout(() => {
     getDocs(collectionRef)
@@ -39,15 +39,18 @@ const ItemListContainer = ({ }) => {
 
   return (
     <div className="">
+      <div>
+        <h1 className="titulo bounce-in-bck">{greeting}</h1>
+      </div>
       {loading ? (
-        <div className="Loading">Cargando productos...</div>
+        <div className="Loading">Cargando categorias...</div>
       ) : (
-        <div className="ItemListContainer">
-          <ItemList products={products} />
+        <div className="CategoryListContainer">
+            <CategoryList products={products} />            
         </div>
       )}
     </div>
   );
 };
 
-export default ItemListContainer;
+export default CategoryListContainer;

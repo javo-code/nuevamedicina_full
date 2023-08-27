@@ -1,29 +1,38 @@
 import logo from '../../img/logo.png';
 import './navBar.css';
 import CartWidget from '../cartWidget/CartWidget';
-import CategoryMenu from '../categoryMenu/CategoryMenu';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Login from '../login/Login';
 
 const NavBar = () => {
   return (
     <nav className='NavBar'>
-
-      <NavLink to={`/`} >      <Link to='/'>
+      <NavLink to={`/`} className="logo-link">
         <img
           className='logo'
           src={logo}
           alt='logo nueva medicina' />
-      </Link></NavLink>
-      <div className="CategoryMenu">
-        <CategoryMenu />
+      </NavLink>
+      <div className="menu">
+        <div className="category">
+          <NavLink to='/category/:categoryId' className="BtnCard">Nutricion</NavLink>
+        </div>
+        <div className="category">
+          <NavLink to='/category/:categoryId' className="BtnCard">Bombas de Infusión</NavLink>
+        </div>
+        <div className="category">
+          <NavLink to='/category/:categoryId' className="BtnCard">Descartables</NavLink>
+        </div>
+        <div className="category">
+          <NavLink to='/category/:categoryId' className="BtnCard">Servicios Profesionales</NavLink>
+        </div>
       </div>
       <CartWidget />
       <div className="btn-login">
         <Login />
       </div>
-</nav>
-  )
-} 
+    </nav>
+  );
+};
 
 export default NavBar;

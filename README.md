@@ -1,4 +1,4 @@
-# Bienvenidos al E-commerce de NUEVA MEDICINA - INTERNACIÓN DOMICILIARIA.GIT ADD .
+# Bienvenidos al E-commerce de NUEVA MEDICINA - INTERNACIÓN DOMICILIARIA.
 
 Este es un e-commerce que te permitirá navegar por diferentes categorías de productos, agregar items a un carrito y finalizar tu compra de manera sencilla. Además, podrás generar un comprobante de compra y almacenar toda la información en una base de datos en Firestore.
 

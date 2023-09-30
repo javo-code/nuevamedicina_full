@@ -4,11 +4,13 @@ import { CartProvider } from './components/context/CartContext';
 import NavBar from './components/navBar/NavBar';
 import Footer from './components/footer/Footer';
 import Cart from './components/cart/Cart';
+import CartModal from './components/cartModal/CartModal';
 import ItemListContainer from "./components/itemListContainer/ItemListContainer";
 import ItemDetailContainer from './components/itemDetailContainer/ItemDetailContainer';
 import CategoryListContainer from './components/categoryListContainer/CategoryListContainer';
 import Checkout from './components/checkout/Checkout';
 import CheckoutForm from './components/checkoutForm/CheckoutForm';
+import CartModal from './components/cartModal/CartModal';
 import Login from './components/login/Login';
 import ProfessionalServs from './components/professionalServs/ProfessionalServs'
 import Nutrition from './components/nutrition/Nutrition'
@@ -31,6 +33,7 @@ function App() {
             <Route path='/item/:itemId' element={<ItemDetailContainer />} />
             <Route path='/login' element={<Login />} />
             <Route path='/cart' element={<Cart />} />
+            <Route path='/cartModal' element={<CartModal />} />
             <Route path='/checkoutform' element={<CheckoutForm />} />
             <Route path='/checkout' element={<Checkout />} />
           </Routes>

@@ -1,6 +1,6 @@
 .container {
-justify-content: center;
-align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .cart-modal-items {
@@ -10,7 +10,7 @@ align-items: center;
     margin-top: 2%;
 }
 
-.cart-item{
+.cart-item {
     display: flex;
     gap: 12em;
     margin: 2%;
@@ -29,16 +29,16 @@ align-items: center;
     align-items: center;
 }
 
-.btn-delete{
+.btn-delete {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 2em;
     height: 2em;
     border-radius: 10px;
-}   
+}
 
-.img-CartModal{
+.img-CartModal {
     width: 6em;
     border-radius: 10px;
 }
@@ -52,11 +52,11 @@ align-items: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     background-image: url(../../img/modalNutricion.jpg);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
 }
 
 .cart-modal-items {
-    
+
     max-height: 200px;
     overflow-x: hidden;
 }
@@ -79,22 +79,25 @@ align-items: center;
     cursor: pointer;
     color: #666;
 }
-.close-btn a{
+
+.close-btn a {
     padding: 0 0.5rem 0 0.5rem;
 }
 
 .close-btn a:hover {
-    color:  red;
+    color: red;
 }
 
-.Header{
+.Header {
     justify-content: space-between;
 }
 
-.h1-checkout{
+.h1-checkout {
     padding: 0 0 0 2.7em;
 
 }
-.h3-checkout, .h6-checkout{
-color: #fff ;
+
+.h3-checkout,
+.h6-checkout {
+    color: #fff;
 }

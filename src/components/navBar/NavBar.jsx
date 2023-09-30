@@ -2,7 +2,7 @@ import logo from '../../img/logo.png';
 import './navBar.css';
 import CartWidget from '../cartWidget/CartWidget';
 import { NavLink } from 'react-router-dom';
-import Login from '../login/Login';
+import BtnLogin from '../btnLogin/BtnLogin';
 
 const NavBar = () => {
   return (
@@ -15,21 +15,23 @@ const NavBar = () => {
       </NavLink>
       <div className="menu">
         <div className="category">
-          <NavLink to='/category/:categoryId' className="BtnCard">Nutricion</NavLink>
+          <NavLink to='/nutricion' className="BtnCard">Nutricion</NavLink>
         </div>
         <div className="category">
-          <NavLink to='/category/:categoryId' className="BtnCard">Bombas de Infusión</NavLink>
+          <NavLink to='/bombas' className="BtnCard">Bombas de Infusión</NavLink>
         </div>
         <div className="category">
-          <NavLink to='/category/:categoryId' className="BtnCard">Descartables</NavLink>
+          <NavLink to='/descartables' className="BtnCard">Descartables</NavLink>
         </div>
         <div className="category">
-          <NavLink to='/category/:categoryId' className="BtnCard">Servicios Profesionales</NavLink>
+          <NavLink to='/servicios' className="BtnCard">Servicios Profesionales</NavLink>
         </div>
       </div>
-      <CartWidget />
-      <div className="btn-login">
-        <Login />
+      <div className="btn-cart">
+        <CartWidget />
+      </div>
+      <div className="LogIn">
+        <BtnLogin />
       </div>
     </nav>
   );

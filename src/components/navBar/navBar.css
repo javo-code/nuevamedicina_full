@@ -100,17 +100,25 @@ rgb(255, 132, 0);
   color: rgb(255, 132, 0);
 }
 
-.CartWidget {
-  margin-left: 10px;
-}
-
-.btn-login {
-  margin-left: 10px;
-}
-
-.btn-login button {
-  background-color: transparent;
+.LogIn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
-  cursor: pointer;
-  text-decoration: underline;
+}
+
+.LogIn:hover{
+  transform: scale(1.2);
+transition: 0.5s;
+}
+.LogIn a{
+  color: white;
+}
+
+.LogIn button{
+  border-radius: 10px;
+  background-color: rgb(255, 132, 0);
+  text-decoration: none;
+  padding: 10%;
+  border: none;
 }

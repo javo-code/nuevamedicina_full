@@ -4,7 +4,7 @@ import { CartContext } from "../context/CartContext";
 import CartItem from "../cartItem/CartItem";
 import Msj1 from "./Msj1";
 
-const Cart1 = () => {
+const Cart = () => {
   const { cart, clearCart } = useContext(CartContext);
 
   return (
@@ -27,4 +27,4 @@ const Cart1 = () => {
   );
 };
 
-export default Cart1;
+export default Cart;

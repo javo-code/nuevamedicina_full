@@ -1,6 +1,9 @@
+/* rgb(255, 132, 0) 
+#09ba09 */
+
 .Cartwidget{
-  background-color: #09ba09;
   padding: 5px;
+  border: 1.5px solid #09ba09;
   border-radius: 5px;
 }
 

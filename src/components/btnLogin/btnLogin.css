@@ -1,0 +1,25 @@
+/* rgb(255, 132, 0) 
+#09ba09 */
+
+.main-btnLogIn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-logIn{
+    border-radius: 10px;
+    background-color: rgb(255, 132, 0);
+    padding: .7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.btn-logIn a{
+    color: white;
+}
+
+.btn-logIn button{
+    text-decoration: none;
+}
